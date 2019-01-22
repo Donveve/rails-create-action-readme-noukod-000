@@ -7,15 +7,6 @@ class PostsController < ApplicationController
 		@post = Post.find(params[:id])
 	end
 
-	def newclass PostsController < ApplicationController
-	def index
-		@posts = Post.all
-	end
-
-	def show
-		@post = Post.find(params[:id])
-	end
-
 	def new
 		@post = Post.new
 	end
@@ -26,8 +17,5 @@ class PostsController < ApplicationController
 		@post.description = params[:description]
 		@post.save
 		redirect_to post_path(@post)
-	end
-end
-		@post = Post.new
 	end
 end
